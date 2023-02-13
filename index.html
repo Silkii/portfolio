@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/59f2da77e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>SilkeBurghout</title>
+  </head>
+
+  <body>
+    <div class="yellow_background">
+      <div class="flowers_background"></div>
+    </div>
+    <a href="mailto:silkesilkex@gmail.com">
+      <div class="label">
+        <h1>Kom in contact</h1>
+      </div>
+    </a>
+    <div class="content_container">
+      <div class="content">
+        <div class="navbar_container">
+          <nav>
+            <ul class="nav_links">
+              <li class="nav_box"><a href="index.html">Home</a></li>
+              <li class="nav_box dropbtn">
+                <a>Projecten</a>
+                <ul class="dropdown">
+                  <li><a href="mmd.html">Multimedia Design</a></li>
+                  <li><a href="dica.html">Digital campaign</a></li>
+                  <li><a href="medq.html">Media questions</a></li>
+                  <li><a href="webd.html">Webdesign</a></li>
+                  <li><a href="imsp.html">Immersive space</a></li>
+                  <li><a href="bmc.html">Business multimedia design</a></li>
+                  <li><a href="cmdproject.html">CMD project</a></li>
+                </ul>
+              </li>
+              <li class="nav_box"><a href="overmij.html">Over mij</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main_content">
+          <div class="text_align">
+            <div class="text_container">
+              <div class="text">
+                <h1>Silke Burghout</h1>
+                <h2>
+                  Ik studeer Communicatie & multimedia design op Hogeschool
+                  Rotterdam. En ik vind het leuk om digitale producten te
+                  ontwerpen.
+                </h2>
+              </div>
+            </div>
+            <div class="socials_container">
+              <div class="about_button_container">
+                <button class="about_button">Over mij</button>
+              </div>
+              <div class="icons_container">
+                <i class="fa-brands fa-linkedin icon"></i
+                ><i class="fa-brands fa-instagram icon"></i
+                ><i class="fa-solid fa-envelope icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image_container">
+            <img class="avatar" alt="avatar" src="img/ik.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".icons_container").childNodes.forEach((child) => {
+        child.onmouseover = () => {
+          child.classList.add("fa-bounce");
+          console.log("add");
+        };
+        child.onmouseout = () => {
+          child.classList.remove("fa-bounce");
+          console.log("remove");
+        };
+      });
+      document.getElementsByClassName("about_button")[0].onclick = () => {
+        window.location.href = "overmij.html";
+      };
+
+      document.getElementsByClassName("fa-linkedin")[0].onclick = () => {
+        window.location.href =
+          "https://www.linkedin.com/in/silke-burghout-186050160/";
+      };
+
+      document.getElementsByClassName("fa-instagram")[0].onclick = () => {
+        window.location.href = "https://www.instagram.com/silkesilkex/";
+      };
+
+      document.getElementsByClassName("fa-envelope")[0].onclick = () => {
+        window.location.href = "mailto:silkesilkex@gmail.com";
+      };
+    </script>
+  </body>
+</html>
